@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/main_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.o.sharei.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_large"
+        android:textSize="30dp"
+        android:text="@string/welcome" />
+    <EditText
+        android:id="@+id/login_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_name"
+        android:ellipsize="start"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/spacing_large"
+        android:hint="@string/login_password"
+        android:inputType="textPassword"
+        android:ellipsize="start"
+        android:gravity="center_horizontal" />
+    <ImageButton
+        android:id="@+id/login_Button"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:paddingTop="@dimen/spacing_large"
+        android:background="@drawable/ic_pets_black_login_24px"/>
+</LinearLayout>
